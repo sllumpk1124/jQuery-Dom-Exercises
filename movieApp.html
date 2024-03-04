@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ratings App</title>
+    <link rel="stylesheet" href="movieApp.css">
+    
+
+    <style>
+        .movie-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Ratings App</h1>
+
+    <form id="movieForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" min="1" max="10" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="movieList">
+       <!-- Add these buttons to your HTML -->
+    </div>
+
+        <!-- Sorting buttons -->
+       <button id="sortTitleDescBtn">Sort by Title (Desc)</button>
+       <button id="sortTitleAscBtn">Sort by Title (Asc)</button>
+       <button id="sortRatingDescBtn">Sort by Rating (Desc)</button>
+       <button id="sortRatingAscBtn">Sort by Rating (Asc)</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="movieApp.js"></script>
+
+</body>
+</html>
